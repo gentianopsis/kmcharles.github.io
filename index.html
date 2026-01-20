@@ -5,6 +5,81 @@
       body{
         background-color:#bad9b4;
       }
+    .container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "dtory content"
+    "footer footer";
+  grid-template-columns: 1fr 3fr; 
+  gap: 3px;
+  border-radius:3px;
+  border-color: black;
+  border-style: solid;
+  background-color: #835e5f;
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+.container div {
+  background-color: white;
+  border-radius:3px;
+  padding: 10px; 
+}
+.container .header {
+  grid-area: header;
+  text-align: center;
+  font-family: "Arial", Times, serif;
+  border-color: black;
+  font-size: 20pt;
+  background-color:#fdcf80;
+  color: #483b3c;
+  border-style: solid;
+}
+
+.container .dtory {
+  grid-area: dtory;
+  text-align: center;
+  font-family: "Arial", Georgia, serif;
+  border-color: black;
+  border-style: solid;
+  background-image: url(back02.gif);
+}
+.container .content {
+  grid-area: content;
+  text-align:center;
+  font-family: "Arial", Times, serif;
+  border-color: black;
+  color: #483b3c;
+  background-color: #483b3c;
+  border-style: solid;
+  overflow-y:auto;
+  height: 350px;
+}
+.container .footer {
+  grid-area: footer;
+  text-align: center;
+  font-family: "Arial", Times, serif;
+  border-color: black;
+  border-style: solid;
+  font-size: 8pt;
+  background-color: #fdcf80;
+}
     </style>
   </head>
+  <body>
+  <div class="container">
+    <div class="header">
+      <h1>Kimberly Charles</h1>
+    </div>
+  <div class="dtory">
+    <p>etc</p>
+  </div>
+  <div class="content">
+    <p>etc</p>
+  </div>
+  <div class="footer">
+    <h3>etc</h3>
+  </div>
+  </div>
 </html>
